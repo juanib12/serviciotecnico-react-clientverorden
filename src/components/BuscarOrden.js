@@ -17,7 +17,7 @@ const BuscarOrden = () => {
 
   const buscarCliente = () => {
     axios
-      .get(`http://localhost:3001/buscarcliente/${dni}`)
+      .get(`https://serv-tecnico-server.herokuapp.com/buscarcliente/${dni}`)
       .then((response) => {
         setCliente(response.data);
       })
@@ -28,7 +28,7 @@ const BuscarOrden = () => {
 
   const buscarOrden = () => {
     axios
-      .get(`http://localhost:3001/buscarorden/${nro_orden}`)
+      .get(`https://serv-tecnico-server.herokuapp.com/buscarorden/${nro_orden}`)
       .then((response) => {
         setOrden(response.data);
       })
